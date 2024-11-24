@@ -196,7 +196,31 @@
 
 
 
-// if else and elseif
+// // if else and elseif
+
+// class Program
+// {
+//     public static void Main()
+//     {
+//         int a = 50, b = 30, c = 25;
+
+//         if (a > b && a > c)
+//         {
+//             Console.WriteLine("A is greater");
+//         }
+//         else if (b > a && b > c)
+//         {
+//             Console.WriteLine("B is greater");
+//         }
+//         else
+//         {
+//             Console.WriteLine("C is greater");
+//         }
+//     }
+// }
+
+
+
 
 class Program
 {
@@ -204,17 +228,13 @@ class Program
     {
         int a = 50, b = 30, c = 25;
 
-        if (a > b && a > c)
-        {
-            Console.WriteLine("A is greater");
-        }
-        else if (b > a && b > c)
-        {
-            Console.WriteLine("B is greater");
-        }
-        else
-        {
-            Console.WriteLine("C is greater");
-        }
+        // First, find the maximum and minimum
+        int max = Math.Max(a, Math.Max(b, c));
+        int min = Math.Min(a, Math.Min(b, c));
+        
+        // The middle number will be the one that is not max or min
+        int middle = a + b + c - max - min;
+
+        Console.WriteLine("The middle number is: " + middle);
     }
 }
