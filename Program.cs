@@ -220,21 +220,92 @@
 // }
 
 
+// middle number find
+//class Program
+// {
+//     public static void Main()
+//     {
+//         int a = 50, b = 30, c = 25;
+
+//         if ((a > b && a < c) || (a < b && a > c))
+//         {
+//             Console.WriteLine("A is the middle number: {0}", a);
+//         }
+//         else if ((b > a && b < c) || (b < a && b > c))
+//         {
+//             Console.WriteLine("B is the middle number: {0}", b);
+//         }
+//         else
+//         {
+//             Console.WriteLine("C is the middle number: {0}", c);
+//         }
+//     }
+// }
 
 
-class Program
-{
-    public static void Main()
-    {
-        int a = 50, b = 30, c = 25;
 
-        // First, find the maximum and minimum
-        int max = Math.Max(a, Math.Max(b, c));
-        int min = Math.Min(a, Math.Min(b, c));
-        
-        // The middle number will be the one that is not max or min
-        int middle = a + b + c - max - min;
 
-        Console.WriteLine("The middle number is: " + middle);
-    }
-}
+
+
+
+//nisted if else
+
+// class Program
+// {
+//     public static void Main()
+//     {
+//         int a = 50, b = 70, c = 25;
+
+//         if (a > b )
+//         {
+//             if(a > c){
+//             Console.WriteLine("A is greater");
+//             }
+//             else{  
+//                 Console.WriteLine("C is greater");
+//             }
+//         }
+//         else
+//         {
+//             if (b > c){
+//                 Console.WriteLine("B is greater");
+//             }
+//             else{
+//             Console.WriteLine("C is greater");
+//             }
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+//if if if 
+
+// class Program{
+//     public static void Main(){
+//         int a = 50;
+//         if(a%3 == 0){
+//             Console.WriteLine("Moduls 50 by 3");
+//         }
+//         if(a%5 == 0){
+//             Console.WriteLine("Moduls 50 by 5");
+//         }
+//         if(a%7 == 0){
+//             Console.WriteLine("Moduls 50 by 7");
+//         }
+//         if(a%8 == 0){
+//             Console.WriteLine("Moduls 50 by 8");
+//         }
+//         if(a%2 == 0){
+//             Console.WriteLine("Moduls 50 by 2");
+//         }
+//     }
+// }
