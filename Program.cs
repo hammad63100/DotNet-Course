@@ -41,6 +41,10 @@ class Program{
         const int a = 10;
        // a = 20;
         Console.WriteLine(a);
+        Console.WriteLine(a);
+        Console.WriteLine(a);
+        Console.WriteLine(a);
+        Console.WriteLine(a);
         
     }
 }
