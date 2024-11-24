@@ -35,16 +35,74 @@
 
 
 
-class Program{
-    public static void Main(){
-        Console.WriteLine("Welcome to My First VS Code .NET Project!");
-        const int a = 10;
-       // a = 20;
-        Console.WriteLine(a);
-        Console.WriteLine(a);
-        Console.WriteLine(a);
-        Console.WriteLine(a);
-        Console.WriteLine(a);
-        
+// class Program{
+//     public static void Main(){
+//         Console.WriteLine("Welcome to My First VS Code .NET Project!");
+//         const int a = 10;
+//        // a = 20;
+//         Console.WriteLine(a);
+            
+//     }
+// }
+
+
+
+
+
+//operator
+
+// //preincrement
+// class Program
+// {
+//     public static void Main()
+//     {
+//         int a = 10, b;
+//         b = ++a; // Assigns the current value of a (10) to b, then increments a to 11
+//         Console.WriteLine(b); // Outputs the value of b, which is 10
+//         Console.WriteLine(a); 
+//     }
+// }
+// 
+// //postincrement
+// class Program
+// {
+//     public static void Main()
+//     {
+//         int a = 10, b;
+//         b = a++; // Assigns the current value of a (10) to b,
+//         // then increments a to 11
+//         Console.WriteLine(b); // Outputs the value of b, which is 10
+//         Console.WriteLine(a); // Outputs the value of a, which is 11
+//     }
+// }
+
+
+
+
+// //predecrement
+// class Program
+// {
+//     public static void Main()
+//     {
+//         int a = 10, b;
+//         b = --a; // Assigns the current value of a (10) to b, then increments a to 11
+//         Console.WriteLine(b); // Outputs the value of b, which is 10
+//         Console.WriteLine(a); 
+//     }
+// }
+
+
+
+
+//postdencrement
+class Program
+{
+    public static void Main()
+    {
+        int a = 10, b;
+        b = a--; // Assigns the current value of a (10) to b,
+        // then increments a to 11
+        Console.WriteLine(b); // Outputs the value of b, which is 10
+        Console.WriteLine(a); // Outputs the value of a, which is 11
     }
 }
