@@ -110,7 +110,7 @@
 
 
 
-//  //assigment
+//  //assignments
 // class Program
 // {
 //     public static void Main()
@@ -248,7 +248,7 @@
 
 
 
-//nisted if else
+//nested if else
 
 // class Program
 // {
@@ -293,19 +293,87 @@
 //     public static void Main(){
 //         int a = 50;
 //         if(a%3 == 0){
-//             Console.WriteLine("Moduls 50 by 3");
+//             Console.WriteLine("Models 50 by 3");
 //         }
 //         if(a%5 == 0){
-//             Console.WriteLine("Moduls 50 by 5");
+//             Console.WriteLine("Models 50 by 5");
 //         }
 //         if(a%7 == 0){
-//             Console.WriteLine("Moduls 50 by 7");
+//             Console.WriteLine("Models 50 by 7");
 //         }
 //         if(a%8 == 0){
-//             Console.WriteLine("Moduls 50 by 8");
+//             Console.WriteLine("Models 50 by 8");
 //         }
 //         if(a%2 == 0){
-//             Console.WriteLine("Moduls 50 by 2");
+//             Console.WriteLine("Modals 50 by 2");
 //         }
 //     }
 // }
+
+
+
+// //switch
+
+// class Program{
+//     public static void Main(){
+//         char ch = 'A';
+//         switch(ch){
+//             case 'A':
+//             case 'E':
+//             case 'I':
+//             case 'O':
+//             case 'U':
+//                 Console.WriteLine("Vowel");
+//             break;
+//         default:
+//         Console.WriteLine("Consonant");
+//         break;
+
+//     }
+// }
+// }
+
+
+
+
+
+//nested switch
+
+class Program
+{
+    public static void Main()
+    {
+        int age = 25;
+        string gender = "Male";
+        switch (age)
+        {
+            case 10:
+                switch (gender)
+                {
+                    case "Male":
+                        Console.WriteLine("Boy");
+                        break;
+                    default:
+                        Console.WriteLine("Girl");
+                        break;
+                }
+                break;
+            case 25:
+                switch (gender)
+                {
+                    case "Male":
+                        Console.WriteLine("Male");
+                        break;
+                    default:
+                        Console.WriteLine("Female");
+                        break;
+                }
+                break;
+
+            default:
+                Console.WriteLine("Mention Age");
+                break;
+
+        }
+    }
+}
