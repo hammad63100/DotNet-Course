@@ -377,3 +377,32 @@
 //         }
 //     }
 // }
+
+
+
+// function overloading
+
+// class Addition{
+//     void add(int x, int y){
+//         Console.WriteLine("Sum of two integers: "+(x+y));
+//     }
+//     void add(int x, int y, int z){
+//         Console.WriteLine("Sum of three integers: "+(x+y+z));
+//     }
+//     void add(float x, int y){
+//         Console.WriteLine("Sum of two integers: "+(x+y));
+//     }
+//     void add(int x, float y){
+//         Console.WriteLine("Sum of two integers: "+(x+y));
+//     }
+//     void add(float x, float y){
+//         Console.WriteLine("Sum of two integers: "+(x+y));
+//     }
+
+//     public static void Main(){
+//         Addition obj = new Addition();
+//         obj.add(10, 20);
+//         obj.add(10, 20,30);
+//     }
+// }
+
