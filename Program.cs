@@ -337,43 +337,43 @@
 
 
 
-//nested switch
+// //nested switch
 
-class Program
-{
-    public static void Main()
-    {
-        int age = 25;
-        string gender = "Male";
-        switch (age)
-        {
-            case 10:
-                switch (gender)
-                {
-                    case "Male":
-                        Console.WriteLine("Boy");
-                        break;
-                    default:
-                        Console.WriteLine("Girl");
-                        break;
-                }
-                break;
-            case 25:
-                switch (gender)
-                {
-                    case "Male":
-                        Console.WriteLine("Male");
-                        break;
-                    default:
-                        Console.WriteLine("Female");
-                        break;
-                }
-                break;
+// class Program
+// {
+//     public static void Main()
+//     {
+//         int age = 25;
+//         string gender = "Male";
+//         switch (age)
+//         {
+//             case 10:
+//                 switch (gender)
+//                 {
+//                     case "Male":
+//                         Console.WriteLine("Boy");
+//                         break;
+//                     default:
+//                         Console.WriteLine("Girl");
+//                         break;
+//                 }
+//                 break;
+//             case 25:
+//                 switch (gender)
+//                 {
+//                     case "Male":
+//                         Console.WriteLine("Male");
+//                         break;
+//                     default:
+//                         Console.WriteLine("Female");
+//                         break;
+//                 }
+//                 break;
 
-            default:
-                Console.WriteLine("Mention Age");
-                break;
+//             default:
+//                 Console.WriteLine("Mention Age");
+//                 break;
 
-        }
-    }
-}
+//         }
+//     }
+// }
