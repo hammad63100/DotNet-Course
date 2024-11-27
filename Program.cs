@@ -406,3 +406,510 @@
 //     }
 // }
 
+
+
+// function overriding
+// class Admin
+// {
+//     int id;
+//     string? name; // Nullable string
+
+//     // Method to accept input
+//     public void Accept(int id, string name)
+//     {
+//         this.id = id;
+//         this.name = name;
+//     }
+
+//     // Method to display the values
+//     public void Display()
+//     {
+//         Console.WriteLine("Id is {0} and name is {1}", id, name);
+//     }
+// }
+
+// class Program
+// {
+//     static void Main()
+//     {
+//         Admin admin = new Admin();
+
+//         // Accepting values
+//         admin.Accept(1, "John Doe");       
+
+//         // Displaying values
+//         admin.Display();
+//     }
+// }
+
+
+
+
+
+// // inhabitance
+// class Employee:Admin{
+//     int salary;
+
+//     internal void Accept1(int salary){
+//         this.salary = salary;
+
+//      }
+
+//     internal void Display(){
+//         Console.WriteLine( salary.ToString());
+//      }
+
+//      Employee obj = new Employee();
+//      obj.Accept(2,"Employee");
+//      obj.Accept1(12000);
+//      obj.Display();
+//      obj.Display1();
+
+// }
+
+
+
+
+
+
+// class Admin
+// {
+//     protected int id; // Changed to protected for inheritance
+//     protected string? name; // Nullable string
+
+//     // Method to accept input
+//     public virtual void Accept(int id, string name)
+//     {
+//         this.id = id;
+//         this.name = name;
+//     }
+
+//     // Method to display the values
+//     public virtual void Display()
+//     {
+//         Console.WriteLine($"Id is {id} and name is {name}");
+//     }
+// }
+
+// class Employee : Admin
+// {
+//     private int salary;
+
+//     // Method to accept salary
+//     public void AcceptSalary(int salary)
+//     {
+//         this.salary = salary;
+//     }
+
+//     // Override the base class Display method
+//     public override void Display()
+//     {
+//         // Call base class display method first
+//         base.Display();
+//         // Then display salary
+//         Console.WriteLine($"Salary is {salary}");
+//     }
+// }
+
+// class Program
+// {
+//     static void Main()
+//     {
+//         // Example with Admin class
+//         Admin admin = new Admin();
+//         admin.Accept(1, "John Doe");       
+//         admin.Display();
+
+//         Console.WriteLine(); // Add a blank line for readability
+
+//         // Example with Employee class
+//         Employee employee = new Employee();
+//         employee.Accept(2, "Jane Smith");  // Inherited method
+//         employee.AcceptSalary(12000);      // Employee-specific method
+//         employee.Display();                // Overridden display method
+//     }
+// }
+
+
+
+
+// inheritance
+
+// // Base class
+// class Admin
+// {
+//     protected int id; // Use 'protected' to allow access in derived classes
+//     protected string? name; // Nullable string
+
+//     // Method to accept input
+//     public void Accept(int id, string name)
+//     {
+//         this.id = id;
+//         this.name = name;
+//     }
+
+//     // Method to display the values
+//     public void Display()
+//     {
+//         Console.WriteLine("Id is {0} and Name is {1}", id, name);
+//     }
+// }
+
+// // Derived class
+// class Employee : Admin
+// {
+//     private int salary;
+
+//     // Method to accept salary
+//     public void Accept1(int salary)
+//     {
+//         this.salary = salary;
+//     }
+
+//     // Method to display employee details
+//     public void Display1()
+//     {
+//         // Call base class Display() to show id and name
+//         base.Display();
+//         // Display salary
+//         Console.WriteLine("Salary is {0}", salary);
+//     }
+// }
+
+// // Main program
+// class Program
+// {
+//     static void Main()
+//     {
+//         // Create an instance of Employee
+//         Employee obj = new Employee();
+
+//         // Accept values for id, name, and salary
+//         obj.Accept(1, "Hammad");
+//         obj.Accept(2, "Huzaifa");
+//         obj.Accept(3, "Afzal");
+//         obj.Accept(4, "Shakir");
+//         obj.Accept1(12000);
+
+//         // Display employee details
+//         obj.Display1();
+//     }
+// }
+
+
+
+
+
+
+
+//Inheritance
+
+// using System;
+// using System.Collections.Generic;
+
+// // Base class
+// class Admin
+// {
+//     protected int id; // Use 'protected' to allow access in derived classes
+//     protected string? name; // Nullable string
+
+//     // Method to accept input
+//     public void Accept(int id, string name)
+//     {
+//         this.id = id;
+//         this.name = name;
+//     }
+
+//     // Method to display the values
+//     public void Display()
+//     {
+//         Console.WriteLine("Id is {0} and Name is {1}", id, name);
+//     }
+// }
+
+// // Derived class
+// class Employee : Admin
+// {
+//     private int salary;
+
+//     // Method to accept salary
+//     public void Accept1(int salary)
+//     {
+//         this.salary = salary;
+//     }
+
+//     // Method to display employee details
+//     public void Display1()
+//     {
+//         // Call base class Display() to show id and name
+//         base.Display();
+//         // Display salary
+//         Console.WriteLine("Salary is {0}", salary);
+//     }
+// }
+
+// // Main program
+// class Program
+// {
+//     static void Main()
+//     {
+//         // List to store multiple employees
+//         List<Employee> employees = new List<Employee>();
+
+//         // Create multiple employees
+//         Employee emp1 = new Employee();
+//         emp1.Accept(1, "Hammad");
+//         emp1.Accept1(12000);
+//         employees.Add(emp1);
+
+//         Employee emp2 = new Employee();
+//         emp2.Accept(2, "Huzaifa");
+//         emp2.Accept1(15000);
+//         employees.Add(emp2);
+
+//         Employee emp3 = new Employee();
+//         emp3.Accept(3, "Afzal");
+//         emp3.Accept1(18000);
+//         employees.Add(emp3);
+
+//         Employee emp4 = new Employee();
+//         emp4.Accept(4, "Shakir");
+//         emp4.Accept1(20000);
+//         employees.Add(emp4);
+
+//         // Display details for all employees
+//         foreach (var emp in employees)
+//         {
+//             emp.Display1();
+//             Console.WriteLine(); // Add an empty line for better readability
+//         }
+//     }
+// }
+
+
+
+
+// loops 
+// for loop
+// class Program
+// {
+//     public static void Main()
+//     {
+//         for (int i = 1; i <= 100; i++) // Loop for rows
+//         {
+//             for (int j = 1; j <= i; j++) // Loop for columns
+//             {
+//                 Console.Write("*"); // Print star
+//             }
+//             Console.WriteLine(); // Move to the next line
+//         }
+//     }
+// }
+
+
+
+
+
+// using System;
+
+// class Program
+// {
+//     public static void Main()
+//     {
+//         int n = 20; // Size of the heart
+//         string name = "HAMMAD"; // Name to display
+//         int nameRow = n / 2; // Row where the name will appear
+
+//         // Top part of the heart
+//         for (int i = n / 2; i <= n; i += 2)
+//         {
+//             // Print leading spaces
+//             for (int j = 1; j < n - i; j += 2)
+//             {
+//                 Console.Write(" ");
+//             }
+
+//             // Print first half of the heart border
+//             for (int j = 1; j <= i; j++)
+//             {
+//                 if (j == 1 || j == i)
+//                 {
+//                     Console.Write("*"); // Border
+//                 }
+//                 else
+//                 {
+//                     Console.Write(" "); // Empty inside
+//                 }
+//             }
+
+//             // Print spaces between the two halves
+//             for (int j = 1; j <= n - i; j++)
+//             {
+//                 Console.Write(" ");
+//             }
+
+//             // Print second half of the heart border
+//             for (int j = 1; j <= i; j++)
+//             {
+//                 if (j == 1 || j == i)
+//                 {
+//                     Console.Write("*"); // Border
+//                 }
+//                 else
+//                 {
+//                     Console.Write(" "); // Empty inside
+//                 }
+//             }
+
+//             Console.WriteLine();
+//         }
+
+//         // Bottom part of the heart
+//         for (int i = n; i >= 1; i--)
+//         {
+//             // Print leading spaces
+//             for (int j = i; j < n; j++)
+//             {
+//                 Console.Write(" ");
+//             }
+
+//             // Print the bottom border or the name row
+//             for (int j = 1; j <= (i * 2) - 1; j++)
+//             {
+//                 if (i == nameRow && j > ((i * 2 - name.Length) / 2) && j <= ((i * 2 + name.Length) / 2))
+//                 {
+//                     // Display the name in the center row
+//                     Console.Write(name[j - (i * 2 - name.Length) / 2 - 1]);
+//                 }
+//                 else if (j == 1 || j == (i * 2) - 1)
+//                 {
+//                     Console.Write("*"); // Border
+//                 }
+//                 else
+//                 {
+//                     Console.Write(" "); // Empty inside
+//                 }
+//             }
+
+//             Console.WriteLine();
+//         }
+//     }
+// }
+
+
+
+
+//loop
+// //for
+// class Program{
+//     public static void Main(){
+//         for(int i = 1; i<= 12; i++){
+//             Console.WriteLine(i);
+//         }
+//     }
+// }
+
+
+// class Program{
+//     public static void Main(){
+//         int num = 38;
+//         for(int i = 1; i<= 12; i++){
+//             Console.WriteLine(num*i);
+//         }
+//     }
+// }
+
+
+// in reverse order
+// class Program{
+//     public static void Main(){
+//         int num = 38;
+//         for(int i = 10; i>=1; i--){
+//             Console.WriteLine("{0} * {1} = {2}",num,i,num*i);
+//         }
+//     }
+// }
+
+
+
+// check prime number
+
+// class Program{
+//     public static void Main(){
+//         int num = 8, i;
+//         for(i=2; i < num; i++){
+//             if(num%i ==0){
+//                 Console.WriteLine("{0} is not a prime number",num);
+//                 break;
+//             }
+//         }
+//         if(num==i){
+//             Console.WriteLine("{0} is a prime number",num);
+//         }
+
+//     }
+// }
+
+
+
+
+//Nested for loop
+
+// class Program{
+//     public static void Main(){
+//         for(int i = 1; i<=9; i++){
+//            for(int j = 1; j<=i; j++){
+//             Console.Write(j);
+//            }
+//            Console.WriteLine();
+//         }
+//     }
+// }
+
+
+// while Loop
+
+// class Program{
+//     public static void Main(){
+//         int i = 1;
+//         while(i<=12){
+//             Console.WriteLine(i);
+//             i++;
+//         }
+//     }
+// }
+
+//do while loop
+
+// class Program{
+//     public static void Main(){
+//         int i = 1;
+//         do{
+//             Console.WriteLine(i);
+//             i++;
+//         }while(i<=10);
+//     }
+// }
+
+
+
+//array
+
+class Array
+{
+    public static void Main()
+    {
+        int[] numbers = new int[5];
+        numbers[0] = 10;
+        numbers[1] = 20;
+        numbers[2] = 30;
+        numbers[3] = 40;
+        numbers[4] = 50;
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            Console.Write(" | " +numbers[2] +" | ");
+        }
+    }
+
+
+}
