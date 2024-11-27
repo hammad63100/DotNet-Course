@@ -966,4 +966,12 @@
 //     }
 // }
 
+//object array
 
+class Array
+{
+    public static void Main()
+    {
+        object[] arr = { "H", 8888, 8.8, true, "Welcome to program" };
+    }
+}
