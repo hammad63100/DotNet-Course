@@ -895,21 +895,75 @@
 
 //array
 
-class Array
-{
-    public static void Main()
-    {
-        int[] numbers = new int[5];
-        numbers[0] = 10;
-        numbers[1] = 20;
-        numbers[2] = 30;
-        numbers[3] = 40;
-        numbers[4] = 50;
-        for (int i = 0; i < numbers.Length; i++)
-        {
-            Console.Write(" | " +numbers[2] +" | ");
-        }
-    }
+// class Array
+// {
+//     public static void Main()
+//     {
+//         int[] numbers = new int[5];
+//         numbers[0] = 10;
+//         numbers[1] = 20;
+//         numbers[2] = 30;
+//         numbers[3] = 40;
+//         numbers[4] = 50;
+//         for (int i = 0; i < numbers.Length; i++)
+//         {
+//             Console.Write(" | " +numbers[2] +" | ");
+//         }
+//     }
 
 
-}
+// }
+// 
+
+
+//one dimension array
+// class Array
+// {
+//     public static void Main()
+//     {
+//         int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+//         for (int i = 0; i < arr.Length; i++)
+//         {
+//             Console.Write(" | " + arr[i] + " | ");
+//         }
+//     }
+// }
+
+
+//two dimension array
+// class Array
+// {
+//     public static void Main()
+//     {
+//         int[,] arr = { {1, 2, 3, 4, 5, 6}, {7, 8, 9, 10, 11, 12} };
+//         for (int i = 0; i < 2; i++){
+//             for (int j = 0; j < 6; j++)
+//             {
+//                 Console.Write(" | " + arr[i, j] + " | ");
+//             }
+//             Console.WriteLine();
+//         }
+//     }
+// }
+
+
+
+// //jagged array
+// class Array
+// {
+//     public static void Main()
+//     {
+//        int [] [] arr= new int[3][];
+//        arr[0] = new int[3] {1,2,3};
+//        arr[1] = new int[2] {4,5};
+//        arr[2] = new int[4] {6,7,8,9};
+//        for (int i = 0; i < 3; i++){
+//         for (int j = 0; j < arr[i].Length; j++){
+//             Console.Write(" | " + arr[i][j] + " | ");
+//         }
+//         Console.WriteLine();
+//        }
+//     }
+// }
+
+
