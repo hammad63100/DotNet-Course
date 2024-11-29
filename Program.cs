@@ -968,17 +968,17 @@
 
 //object array
 
-class Array
-{
-    public static void Main()
-    {
-        object[] arr = { "H", 8888, 8.8, true, "Welcome to program" };
-        // for(int i=0; i<arr.Length; i++){
-        //     Console.WriteLine(arr[i]);
-        // }
-        foreach (object obj in arr)
-        {
-            Console.WriteLine(obj);
-        }
-    }
-}
+// class Array
+// {
+//     public static void Main()
+//     {
+//         object[] arr = { "H", 8888, 8.8, true, "Welcome to program" };
+//         // for(int i=0; i<arr.Length; i++){
+//         //     Console.WriteLine(arr[i]);
+//         // }
+//         foreach (object obj in arr)
+//         {
+//             Console.WriteLine(obj);
+//         }
+//     }
+// }
