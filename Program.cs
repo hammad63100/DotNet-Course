@@ -982,3 +982,79 @@
 //         }
 //     }
 // }
+
+
+
+
+// // class and object
+// class Student {
+//     // Instance variables (properties)
+//     private int id;
+//     private String name;
+//     private int gpa;
+
+//     // Constructor
+//     public Student() {
+//         id = 1;
+//         name = "John";
+//         gpa = 3;
+//     }
+
+//     // Method to display student information
+//     public void display() {
+//         Console.WriteLine("ID: " + id);
+//         Console.WriteLine("Name: " + name);
+//         Console.WriteLine("GPA: " + gpa);
+//     }
+
+//     // Main method to create object and call display
+//     public static void Main(String[] args) {
+//         Student obj = new Student();
+//         obj.display();
+//     }
+// }
+
+
+
+
+
+//class and object
+
+
+class Student
+{
+    private int id;
+    private String name;
+
+    void Accept(int id, string name)
+    {
+        this.id = id;
+        this.name = name;
+    }
+    void Display()
+    {
+        Console.WriteLine("Roll no is {0} and Name is {1}", id, name);
+    }
+
+    public static void Main()
+    {
+        Student s1 = new Student();
+        s1.Accept(1, "Hammad");
+        s1.Display();
+
+
+        Student s2 = new Student();
+        s2.Accept(2, "Huzifa");
+        s2.Display();
+
+
+        Student s3 = new Student();
+        s3.Accept(3, "Afzal");
+        s3.Display();
+
+
+        Student s4 = new Student();
+        s4.Accept(4, "Abdul Muqist");
+        s4.Display();
+    }
+}
