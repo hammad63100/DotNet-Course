@@ -1024,7 +1024,7 @@
 class Student
 {
     private int id;
-    private String name;
+    private String? name;
 
     void Accept(int id, string name)
     {
