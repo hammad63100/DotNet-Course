@@ -1026,7 +1026,11 @@ class Student
     private int id;
     private String? name;
 
-    void Accept(int id, string name)
+    Student(){
+        id = 211;
+    }
+
+    Student(int id, string name)
     {
         this.id = id;
         this.name = name;
@@ -1039,22 +1043,10 @@ class Student
     public static void Main()
     {
         Student s1 = new Student();
-        s1.Accept(1, "Hammad");
         s1.Display();
 
 
-        Student s2 = new Student();
-        s2.Accept(2, "Huzifa");
+        Student s2 = new Student(1001,"XYZ");
         s2.Display();
-
-
-        Student s3 = new Student();
-        s3.Accept(3, "Afzal");
-        s3.Display();
-
-
-        Student s4 = new Student();
-        s4.Accept(4, "Abdul Muqist");
-        s4.Display();
     }
 }
