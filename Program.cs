@@ -1021,32 +1021,68 @@
 //class and object
 
 
-class Student
+// class Student
+// {
+//     private int id;
+//     private String? name;
+
+//     Student(){
+//         id = 211;
+//         name = "John";
+//     }
+
+//     Student(int id, string name)
+//     {
+//         this.id = id;
+//         this.name = name;
+//     }
+//     void Display()
+//     {
+//         Console.WriteLine("Roll no is {0} and Name is {1}", id, name);
+//     }
+
+//     public static void Main()
+//     {
+//         Student s1 = new Student();
+//         s1.Display();
+
+
+//         Student s2 = new Student(1001,"XYZ");
+//         s2.Display();
+//     }
+// }
+
+
+
+
+// abstract and interface topic
+
+// public abstract class Bank{
+
+//     internal int balance=5000;
+//     abstract public void Credit(int amt);
+//     abstract public void Deposit(int amt);
+//     abstract public bool Login(int pincode);
+//     abstract public void CheckBalance();
+ 
+//     void BankInfo(){
+//         Console.WriteLine("Ubl Bank");
+//     }
+// }
+
+
+
+
+public abstract class Bank
 {
-    private int id;
-    private String? name;
+    internal int balance = 5000;
+    abstract public void Credit(int amt);
+    abstract public void Deposit(int amt);
+    abstract public bool Login(int pincode);
+    abstract public void CheckBalance();
 
-    Student(){
-        id = 211;
-    }
-
-    Student(int id, string name)
+    void BankInfo()
     {
-        this.id = id;
-        this.name = name;
-    }
-    void Display()
-    {
-        Console.WriteLine("Roll no is {0} and Name is {1}", id, name);
-    }
-
-    public static void Main()
-    {
-        Student s1 = new Student();
-        s1.Display();
-
-
-        Student s2 = new Student(1001,"XYZ");
-        s2.Display();
+        Console.WriteLine("Ubl Bank");
     }
 }
