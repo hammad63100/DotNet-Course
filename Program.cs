@@ -1057,32 +1057,25 @@
 
 // abstract and interface topic
 
-// public abstract class Bank{
-
-//     internal int balance=5000;
+// public abstract class Bank
+// {
+//     internal int balance = 5000;
 //     abstract public void Credit(int amt);
 //     abstract public void Deposit(int amt);
 //     abstract public bool Login(int pincode);
 //     abstract public void CheckBalance();
- 
-//     void BankInfo(){
+
+//     void BankInfo()
+//     {
 //         Console.WriteLine("Ubl Bank");
 //     }
 // }
 
 
-
-
-public abstract class Bank
+public interface  Bank
 {
-    internal int balance = 5000;
     abstract public void Credit(int amt);
     abstract public void Deposit(int amt);
     abstract public bool Login(int pincode);
-    abstract public void CheckBalance();
-
-    void BankInfo()
-    {
-        Console.WriteLine("Ubl Bank");
-    }
+    abstract public void CheckBalance(); 
 }
