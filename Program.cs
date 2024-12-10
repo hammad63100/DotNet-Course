@@ -1102,9 +1102,9 @@
 
 
 
-// Expectations example 
+// Exception example 
 
-// class Expectation{
+// class Exception{
 //     public static void Main(String[] args){
 //         try{
 //         int a, b, c;
@@ -1122,51 +1122,131 @@
 // }
 
 
-class Expectation
-{
-    public static void Main(String[] args)
-    {
-        bool continueCalculation = true;
 
-        do
-        {
-            try
-            {
-                int a, b, c;
+
+
+// class Exception
+// {
+//     public static void Main(String[] args)
+//     {
+//         bool continueCalculation = true;
+
+//         do
+//         {
+//             try
+//             {
+//                 int a, b, c;
                 
-                Console.WriteLine("Enter Your First Number");
-                a = Convert.ToInt32(Console.ReadLine());
+//                 Console.WriteLine("Enter Your First Number");
+//                 a = Convert.ToInt32(Console.ReadLine());
                 
-                Console.WriteLine("Enter Your Second Number");
-                b = Convert.ToInt32(Console.ReadLine());
+//                 Console.WriteLine("Enter Your Second Number");
+//                 b = Convert.ToInt32(Console.ReadLine());
                 
-                // Check for division by zero
-                if (b == 0)
-                {
-                    Console.WriteLine("Error: Cannot divide by zero!");
-                    continue;
-                }
+//                 // Check for division by zero
+//                 if (b == 0)
+//                 {
+//                     Console.WriteLine("Error: Cannot divide by zero!");
+//                     continue;
+//                 }
                 
-                c = a / b;
-                Console.WriteLine("C is {0}", c);
+//                 c = a / b;
+//                 Console.WriteLine("C is {0}", c);
                 
-                // Ask if user wants to continue
-                Console.WriteLine("Do you want to perform another calculation? (yes/no)");
-                string response = Console.ReadLine().ToLower();
+//                 // Ask if user wants to continue
+//                 Console.WriteLine("Do you want to perform another calculation? (yes/no)");
+//                 string response = Console.ReadLine().ToLower();
                 
-                if (response != "yes")
-                {
-                    continueCalculation = false;
-                }
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("Please enter a valid integer!");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("An error occurred: " + ex.Message);
-            }
-        } while (continueCalculation);
-    }
-}
+//                 if (response != "yes")
+//                 {
+//                     continueCalculation = false;
+//                 }
+//             }
+//             catch (FormatException)
+//             {
+//                 Console.WriteLine("Please enter a valid integer!");
+//             }
+//             catch (Exception ex)
+//             {
+//                 Console.WriteLine("An error occurred: " + ex.Message);
+//             }
+//         } while (continueCalculation);
+//     }
+// }
+
+
+
+
+// // calculator in c# on Exception
+
+// class Exception
+// {
+//     public static void Main(string[] args)
+//     {
+//         bool continueCalculation = true;
+
+//         do
+//         {
+//             try
+//             {
+//                 long a, c, result;
+
+//                 Console.WriteLine("Enter Your First Number:");
+//                 a = Convert.ToInt64(Console.ReadLine());
+
+//                 Console.WriteLine("Enter Your Sign (+, -, *, /):");
+
+//                 string sign = Console.ReadLine(); // Use this variable for the switch statement
+
+//                 Console.WriteLine("Enter Your Second Number:");
+//                 c = Convert.ToInt64(Console.ReadLine());
+
+//                 if (c == 0) // Check for division by zero only if the operator is division
+//                 {
+//                     Console.WriteLine("Error: Cannot divide by zero!");
+//                     continue;
+//                 }
+
+//                 switch (sign) // Use the correct variable for the switch
+//                 {
+//                     case "+":
+//                         result = a + c;
+//                         Console.WriteLine("Result is {0}", result);
+//                         break;
+//                     case "-":
+//                         result = a - c;
+//                         Console.WriteLine("Result is {0}", result);
+//                         break;
+//                     case "*":
+//                         result = a * c;
+//                         Console.WriteLine("Result is {0}", result);
+//                         break;
+//                     case "/":
+//                         result = a / c;
+//                         Console.WriteLine("Result is {0}", result);
+//                         break;
+//                     default:
+//                         Console.WriteLine("Invalid sign!");
+//                         break;
+//                 }
+
+//                 // Ask if the user wants to continue
+//                 Console.WriteLine("Do you want to perform another calculation? (y/n)");
+//                 string? response = Console.ReadLine()?.ToLower();
+
+//                 if (response != "y")
+//                 {
+//                     continueCalculation = false;
+//                 }
+//             }
+//             catch (FormatException)
+//             {
+//                 Console.WriteLine("Please enter a valid integer!");
+//             }
+//             catch (System.Exception ex)
+//             {
+//                 Console.WriteLine("An error occurred: " + ex.Message);
+//             }
+//         } while (continueCalculation);
+//     }
+// }
