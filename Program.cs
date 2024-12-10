@@ -1072,10 +1072,101 @@
 // }
 
 
-public interface  Bank
+// // for interface
+// public interface  Bank
+// {
+//     abstract public void Credit(int amt);
+//     abstract public void Deposit(int amt);
+//     abstract public bool Login(int pincode);
+//     abstract public void CheckBalance(); 
+// }
+
+
+
+
+// public interface  Promotion
+// {
+//     void marketing();
+//     void Branding();
+// }
+
+
+
+// internal class Billing
+// {
+//     public virtual float calcBill(int finalamount)
+//     {
+//         return (float)(finalamount +(finalamount*0.18));
+//     }
+// }
+
+
+
+// Expectations example 
+
+// class Expectation{
+//     public static void Main(String[] args){
+//         try{
+//         int a, b, c;
+//         Console.WriteLine("Enter Your First Number");
+//         a = Convert.ToInt32(Console.ReadLine());
+//         Console.WriteLine("Enter Your Second Number");
+//         b = Convert.ToInt32(Console.ReadLine());
+//         c = a/b;
+//         Console.WriteLine("C is {0}",c);
+//         }
+//         catch(Exception ex ){
+//             Console.WriteLine("input Correct data");
+//         }
+//     }
+// }
+
+
+class Expectation
 {
-    abstract public void Credit(int amt);
-    abstract public void Deposit(int amt);
-    abstract public bool Login(int pincode);
-    abstract public void CheckBalance(); 
+    public static void Main(String[] args)
+    {
+        bool continueCalculation = true;
+
+        do
+        {
+            try
+            {
+                int a, b, c;
+                
+                Console.WriteLine("Enter Your First Number");
+                a = Convert.ToInt32(Console.ReadLine());
+                
+                Console.WriteLine("Enter Your Second Number");
+                b = Convert.ToInt32(Console.ReadLine());
+                
+                // Check for division by zero
+                if (b == 0)
+                {
+                    Console.WriteLine("Error: Cannot divide by zero!");
+                    continue;
+                }
+                
+                c = a / b;
+                Console.WriteLine("C is {0}", c);
+                
+                // Ask if user wants to continue
+                Console.WriteLine("Do you want to perform another calculation? (yes/no)");
+                string response = Console.ReadLine().ToLower();
+                
+                if (response != "yes")
+                {
+                    continueCalculation = false;
+                }
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Please enter a valid integer!");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred: " + ex.Message);
+            }
+        } while (continueCalculation);
+    }
 }
