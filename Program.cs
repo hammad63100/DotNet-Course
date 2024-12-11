@@ -1461,3 +1461,24 @@
 //         sw.Close();
 //     }
 // }
+
+
+
+// //Thread
+
+// class ThreadExample{
+//     public static void display(){
+//         for(int i = 0; i<=10; i++){
+//             Console.WriteLine("Process "+i);
+//             Thread.Sleep(1000);
+//         }
+//     }
+//     public static void Main(string[] args){
+//         ThreadStart obj = new ThreadStart(ThreadExample.display);
+//         Thread t = new Thread(obj);
+//         t.Start();
+//         t.Join();
+//         Thread t1 = new Thread(obj);
+//         t1.Start();
+//     }
+// }
