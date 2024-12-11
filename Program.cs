@@ -1437,14 +1437,27 @@
 
 
 //read byn code
-using System.Xml;
+// using System.Xml;
 
-class Handling{
-    public static void Main(string[] args){
-        FileInfo fo = new FileInfo("d:/.Net/myfile.text");
-        FileStream fs = fo.Open(FileMode.OpenOrCreate, FileAccess.Read, FileShare.Read);
-        StreamReader sr = new StreamReader(fs);
-        string data = sr.ReadToEnd();
-        Console.WriteLine(data);
-    }
-}
+// class Handling{
+//     public static void Main(string[] args){
+//         FileInfo fo = new FileInfo("d:/.Net/myfile.text");
+//         FileStream fs = fo.Open(FileMode.OpenOrCreate, FileAccess.Read, FileShare.Read);
+//         StreamReader sr = new StreamReader(fs);
+//         string data = sr.ReadToEnd();
+//         Console.WriteLine(data);
+//     }
+// }
+
+
+// append in file handling
+
+// class Handling{
+//     public static void Main(string[] args){
+//         // FileInfo fo = new FileInfo("d:/.Net/myfile.text");
+//         // FileStream fs = fo.Open(FileMode.OpenOrCreate, FileAccess.Write, FileShare.Read);
+//         StreamWriter sw = File.AppendText("d:/.Net/myfile.text");
+//         sw.WriteLine("Write to test a three   program");
+//         sw.Close();
+//     }
+// }
