@@ -1136,27 +1136,27 @@
 //             try
 //             {
 //                 int a, b, c;
-                
+
 //                 Console.WriteLine("Enter Your First Number");
 //                 a = Convert.ToInt32(Console.ReadLine());
-                
+
 //                 Console.WriteLine("Enter Your Second Number");
 //                 b = Convert.ToInt32(Console.ReadLine());
-                
+
 //                 // Check for division by zero
 //                 if (b == 0)
 //                 {
 //                     Console.WriteLine("Error: Cannot divide by zero!");
 //                     continue;
 //                 }
-                
+
 //                 c = a / b;
 //                 Console.WriteLine("C is {0}", c);
-                
+
 //                 // Ask if user wants to continue
 //                 Console.WriteLine("Do you want to perform another calculation? (yes/no)");
 //                 string response = Console.ReadLine().ToLower();
-                
+
 //                 if (response != "yes")
 //                 {
 //                     continueCalculation = false;
@@ -1250,3 +1250,127 @@
 //         } while (continueCalculation);
 //     }
 // }
+
+
+
+
+// collection -------array list
+
+// using System.Collections;
+
+// class Collection{
+//     public static void Main(string[] args){
+//         ArrayList obj = new ArrayList();
+//         obj.Add(1);
+//         obj.Add("C#");
+//         obj.Add("Java");
+//         obj.Add("JavaScript");
+//         obj.Add(12.33);
+//         obj.Remove("Java");
+//         foreach(object i in obj){
+//             Console.WriteLine(i);
+//         }
+//     }
+// }
+
+
+
+
+// //collection ------hash table
+// using System.Collections;
+
+// class Collection{
+//     public static void Main(string[] args){
+//        Hashtable ht = new Hashtable();
+//        ht.Add("HAmmad", 2011);
+//        ht.Add("Afzal", 2012);
+//        ht.Add("Huzaifa", 2013);
+//        ht.Add("Abdul Muqsit", 2014);
+//        ht.Remove("Abdul Muqsit");
+//        foreach(object i in ht){
+//         Console.WriteLine(i);
+//        }
+//        Console.WriteLine("  ");
+//        Console.WriteLine("  ");
+//        Console.WriteLine("  ");
+//        foreach(DictionaryEntry entry in ht){
+//         Console.WriteLine(entry.Key+", " + entry.Value);
+//        }
+//     }
+// }
+
+
+
+
+
+// //collection ------sorted list
+// using System.Collections;
+
+// class Collection
+// {
+//     public static void Main(string[] args)
+//     {
+//         //Hashtable st = new Hashtable();
+//         SortedList st = new SortedList();
+//         st.Add("HAmmad", 2011);
+//         st.Add("Afzal", 2012);
+//         st.Add("Huzaifa", 2013);
+//         st.Add("Abdul Muqsit", 2014);
+//         //st.Remove("Abdul Muqsit");
+//         // foreach (object i in st)
+//         // {
+//         //     Console.WriteLine(i);
+//         // }
+//         // Console.WriteLine("  ");
+//         // Console.WriteLine("  ");
+//         // Console.WriteLine("  ");
+//         foreach (DictionaryEntry entry in st)
+//         {
+//             Console.WriteLine(entry.Key + ", " + entry.Value);
+//         }
+//     }
+// }
+
+
+
+// // //collection ------stack table
+// using System.Collections;
+// class Collection
+// {
+//     public static void Main(string[] args)
+//     {
+//        Stack st = new Stack();
+//        st.Push(1);
+//        st.Push(2);
+//        st.Push(3);
+//        st.Push(4);
+//        st.Push(5);
+//        foreach(object i in st){
+//         Console.WriteLine(i);
+//        }
+
+//     }
+// }
+
+
+
+
+// //collection ------ Queue
+using System.Collections;
+// 
+class Collection
+{
+    public static void Main(string[] args)
+    {
+       Queue st = new Queue();
+       st.Enqueue(1);
+       st.Enqueue(2);
+       st.Enqueue(3);
+       st.Enqueue(4);
+       st.Enqueue(5);
+       foreach(object i in st){
+        Console.WriteLine(i);
+       }
+
+    }
+}
