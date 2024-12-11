@@ -1356,21 +1356,41 @@
 
 
 // //collection ------ Queue
-using System.Collections;
-// 
-class Collection
-{
-    public static void Main(string[] args)
-    {
-       Queue st = new Queue();
-       st.Enqueue(1);
-       st.Enqueue(2);
-       st.Enqueue(3);
-       st.Enqueue(4);
-       st.Enqueue(5);
-       foreach(object i in st){
-        Console.WriteLine(i);
-       }
+// using System.Collections;
+// class Collection
+// {
+//     public static void Main(string[] args)
+//     {
+//        Queue st = new Queue();
+//        st.Enqueue(1);
+//        st.Enqueue(2);
+//        st.Enqueue(3);
+//        st.Enqueue(4);
+//        st.Enqueue(5);
+//        foreach(object i in st){
+//         Console.WriteLine(i);
+//        }
 
-    }
-}
+//     }
+// }
+
+
+
+// //collection ------ generic list
+// using System.Collections;
+// class Collection
+// {
+//     public static void Main(string[] args)
+//     {
+//        List<int> list = new List<int>();
+//        list.Add(1);
+//        list.Add(2);
+//        list.Add(3);
+//        list.Add(4);
+//        list.Add(5);
+//        foreach(object i in list){
+//         Console.WriteLine(i);
+//        }
+
+//     }
+// }
