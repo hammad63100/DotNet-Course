@@ -1394,3 +1394,57 @@
 
 //     }
 // }
+
+
+
+
+// //collection ------ Dictionary list
+// using System.Collections;
+// class Collection
+// {
+//     public static void Main(string[] args)
+//     {
+//        Dictionary<string,int> list = new Dictionary<string, int>();
+//        list.Add("H1",1);
+//        list.Add("H2",2);
+//        list.Add("H3",3);
+//        list.Add("H4",4);
+
+//        foreach(KeyValuePair<string, int> entry in list){
+//         Console.WriteLine(entry.Key+ ", "+ entry.Value);
+//        }
+
+//     }
+// }
+
+
+
+
+// file handling in c#
+
+// //create byn code
+// class Handling{
+//     public static void Main(string[] args){
+//         FileInfo fo = new FileInfo("d:/.Net/myfile.text");
+//         FileStream fs = fo.Open(FileMode.OpenOrCreate, FileAccess.Write, FileShare.Read);
+//         StreamWriter sw = new StreamWriter(fs);
+//         sw.WriteLine("Welcome in file handling program");
+//         sw.Close();
+//         Console.WriteLine("File created successfully");
+//     }
+// }
+
+
+
+//read byn code
+using System.Xml;
+
+class Handling{
+    public static void Main(string[] args){
+        FileInfo fo = new FileInfo("d:/.Net/myfile.text");
+        FileStream fs = fo.Open(FileMode.OpenOrCreate, FileAccess.Read, FileShare.Read);
+        StreamReader sr = new StreamReader(fs);
+        string data = sr.ReadToEnd();
+        Console.WriteLine(data);
+    }
+}
