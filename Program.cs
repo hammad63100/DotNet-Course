@@ -1439,15 +1439,15 @@
 //read byn code
 using System.Xml;
 
-class Handling{
-    public static void Main(string[] args){
-        FileInfo fo = new FileInfo("d:/.Net/myfile.text");
-        FileStream fs = fo.Open(FileMode.OpenOrCreate, FileAccess.Read, FileShare.Read);
-        StreamReader sr = new StreamReader(fs);
-        string data = sr.ReadToEnd();
-        Console.WriteLine(data);
-    }
-}
+// class Handling{
+//     public static void Main(string[] args){
+//         FileInfo fo = new FileInfo("d:/.Net/myfile.text");
+//         FileStream fs = fo.Open(FileMode.OpenOrCreate, FileAccess.Read, FileShare.Read);
+//         StreamReader sr = new StreamReader(fs);
+//         string data = sr.ReadToEnd();
+//         Console.WriteLine(data);
+//     }
+// }
 
 
 // append in file handling
@@ -1485,3 +1485,63 @@ class Handling{
 
 
 //delegate and event in C#
+// //single cost delegate
+// class DelegateExample{
+//     public void fun(){
+//         Console.WriteLine("Function Body");
+
+//     }
+//     public delegate void my_del();
+//     public static void Main(string[] args){
+//         DelegateExample obj = new DelegateExample();
+//         my_del del = new my_del(obj.fun);
+//         del();
+//         del();
+//         del();
+//         del();
+//     }
+
+// }
+
+
+//Multiple cost delegate
+class DelegateExample
+{
+    public void fun()
+    {
+        Console.WriteLine("Function Body");
+
+    }
+    public void fun1()
+    {
+        Console.WriteLine("Function 1 Body");
+
+    }
+    public void fun2()
+    {
+        Console.WriteLine("Function 2 Body");
+
+    }
+    public void fun3()
+    {
+        Console.WriteLine("Function 3 Body");
+
+    }
+    public void fun4()
+    {
+        Console.WriteLine("Function 4 Body");
+
+    }
+    public delegate void my_del();
+    public static void Main(string[] args)
+    {
+        DelegateExample obj = new DelegateExample();
+        my_del del = new my_del(obj.fun);
+        del += obj.fun1;
+        del += obj.fun2;
+        del -= obj.fun3;
+        del += obj.fun4;
+        del();
+    }
+
+}
